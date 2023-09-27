@@ -32,8 +32,22 @@ public class App {
         }
         System.out.println("svar= "+svar);
 
+        //Medelvärde av array1 och array2
         double antal_siffror_tillsammans = array1.length + array2.length;
         double kvot2 = (svar)/antal_siffror_tillsammans;
         System.out.println("Medelvärdet för antalet siffror: "+kvot2);
+
+        //Suamman av varje fält i array 1 med varje i array2
+        int[] summa_array = new int[5];
+        summa_array[0] = array1[0] + array2[0];
+        summa_array[1] = array1[1] + array2[1];
+        summa_array[2] = array1[2] + array2[2];
+        summa_array[3] = array1[3] + array2[3];
+        summa_array[4] = array1[4] + array2[4];
+        System.out.println("Summan av array1 och array2 för index 0 är: "+summa_array[0]);
+        System.out.println("Summan av array1 och array2 för index 1 är: "+summa_array[1]);
+        System.out.println("Summan av array1 och array2 för index 2 är: "+summa_array[2]);
+        System.out.println("Summan av array1 och array2 för index 3 är: "+summa_array[3]);
+        System.out.println("Summan av array1 och array2 för index 4 är: "+summa_array[4]);
     }
 }
