@@ -11,7 +11,7 @@ public class App {
         
         //Skriva antalet platser i Array
         double antal_siffror = array1.length;
-        System.out.println(antal_siffror);
+        System.out.println("Antal element i arrayen: "+antal_siffror);
 
         //Skriva medelvärdet av lagrade Arrays
         double kvot = (array1[0]+array1[1]+array1[2]+array1[3]+array1[4])/antal_siffror;
@@ -28,10 +28,12 @@ public class App {
         int svar=0;
         while (i < 5) {
             svar =svar+ array1[i] + array2[i];
-            i =+ 1;
+            i += 1;
         }
         System.out.println("svar= "+svar);
 
-        //int summa = array1+array2;
+        double antal_siffror_tillsammans = array1.length + array2.length;
+        double kvot2 = (svar)/antal_siffror_tillsammans;
+        System.out.println("Medelvärdet för antalet siffror: "+kvot2);
     }
 }
