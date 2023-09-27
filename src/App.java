@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         //Skriva ut tal i Array
@@ -49,5 +51,26 @@ public class App {
         System.out.println("Summan av array1 och array2 för index 2 är: "+summa_array[2]);
         System.out.println("Summan av array1 och array2 för index 3 är: "+summa_array[3]);
         System.out.println("Summan av array1 och array2 för index 4 är: "+summa_array[4]);
+
+       //Kod som tar in heltal från tangentbordet som sedan lagras i fält
+        System.out.println("         ");
+        Scanner tangentbord = new Scanner(System.in);
+        int[] heltal_array = new int[4];
+        System.out.println("Var så snäll och skriv 4 heltal nedan.");
+        System.out.print("Skriv heltal 1 här: ");
+        heltal_array[0] = tangentbord.nextInt();
+        tangentbord.nextLine();
+        System.out.print("Skriv heltal 2 här: ");
+        heltal_array[1] = tangentbord.nextInt();
+        tangentbord.nextLine();
+        System.out.print("Skriv heltal 3 här: ");
+        heltal_array[2] = tangentbord.nextInt();
+        tangentbord.nextLine();
+        System.out.print("Skriv heltal 4 här: ");
+        heltal_array[3] = tangentbord.nextInt();
+        tangentbord.nextLine();
+        int heltal_summa = heltal_array[0]+heltal_array[1]+heltal_array[2]+heltal_array[3];
+        System.out.println("Summan av heltalen: "+heltal_summa);
+        tangentbord.close();
     }
 }
